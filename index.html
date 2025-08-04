@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+  <title>To-Do List com Dark Mode</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+  <header>
+    <h1>Minha To-Do List</h1>
+    <!-- Botão para alternar entre temas claro/escuro -->
+    <button id="toggle-theme">🌙</button>
+  </header>
+
+  <main>
+    <!-- Formulário para adicionar novas tarefas -->
+    <form id="todo-form">
+      <input 
+        type="text" 
+        id="todo-input" 
+        placeholder="Digite uma tarefa" 
+        required
+      >
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- Lista onde as tarefas serão exibidas -->
+    <ul id="todo-list"></ul>
+  </main>
+
+  <!-- Script JS no final para carregar depois do HTML -->
+  <script src="script.js"></script>
+</body>
+</html>
