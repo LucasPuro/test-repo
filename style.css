@@ -1,0 +1,54 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s; /* Suaviza troca de tema */
+}
+
+/* Tema claro */
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Tema escuro */
+body.dark {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;                /* Layout horizontal */
+  justify-content: space-between; /* Espaço entre título e botão */
+  align-items: center; 
+  padding: 1rem;
+  background: #007acc; /* Cor azul para destaque */
+  color: white;
+}
+
+/* Remove bullets da lista */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Cada tarefa da lista */
+li {
+  display: flex; 
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc; /* Linha divisória */
+}
+
+/* Tarefa concluída */
+li.completed {
+  text-decoration: line-through; /* Riscado */
+  opacity: 0.6; /* Menor destaque */
+}
+
+/* Todos os botões */
+button {
+  cursor: pointer; /* Mãozinha ao passar o mouse */
+}
